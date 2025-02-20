@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="bodyId" onkeypress="RemoveBubble(event)">
+
+    <h3 class="title">Bubble Game</h3>
+    <footer>
+
+        <div class="left">
+            <h3>Score :<label id="NewScore">0</label></h3>
+            <h3>Last Score :<label id="LastScore">0</label></h3>
+            <h3>Highest Score :<label id="HighestScore">0</label></h3>
+        </div>
+
+        <div class="Timing-list">
+            <span>Timing</span>
+            <label id="Tscore"> : 0</label>
+            <div class="center">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="right">
+            <input type="button" value="Start Game" onclick="btn1Click()" id="btn1" name="btn1">
+            <input type="button" value="Stop" onclick="btn2Click()" id="btn2" name="btn2" style="display: none;">
+            <input type="button" value="Restart" onclick="btn3Click()" id="btn3" name="btn3" style="display: none;">
+            <p>
+                X : <label id="lblX"></label><br /> Y : <label id="lblY"></label>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="site.js"></script>
+</body>
+
+</html>
