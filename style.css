@@ -58,13 +58,16 @@ footer {
     font-weight: bold;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-left: 15px;
-    width: 33.33%;
 }
-
+.left h3{
+    display: flex;
+    justify-content: space-between;
+}
 .left label {
-    float: right;
-    /* margin-left: 100px; */
+    /* float: right; */
+    padding-left: 100px;
 }
 
 .BGcolor {
@@ -79,8 +82,8 @@ footer {
     font-size: 20px;
     text-transform: capitalize;
     font-weight: bold;
-    width: 33.33%;
-    margin-left: 20%;
+    /* width: 33.33%; */
+    /* margin-left: 20%; */
 }
 
 .Timing-list .box {
@@ -94,8 +97,7 @@ footer {
 }
 
 .right {
-    float: right;
-    width: 33.33%;
+    width: 15%;
     text-align: right;
     margin-right: 10px;
 }
@@ -110,7 +112,10 @@ footer {
     font-weight: bold;
     border-radius: 10px;
 }
-
+.right input:hover{
+    /* opacity: 0.9; */
+    background-color: #ff9900e2;
+}
 .right p {
     font-weight: bold;
 }
@@ -127,4 +132,93 @@ footer {
 
 .singlebubble {
     transform: scale(5);
+}
+
+/* Responsive Design */
+@media (max-width:850px) {
+    .title{
+        font-size: 80px;
+    }
+    .left label{
+        padding-left: 50px;
+    }
+}
+
+@media (max-width:700px) {
+    .title{
+        font-size: 60px;
+    }
+    .left,.Timing-list{
+        font-size: 17px;
+    }
+    .left label{
+        padding-left: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .title{
+        font-size: 50px;
+    }
+    .left label{
+        padding-left: 20px;
+    }
+    .left,.Timing-list{
+        font-size: 15px;
+    }
+    .Timing-list .box{
+        width: 25px;
+        height: 25px;
+        border-radius: 8px;
+    }
+    .right input{
+        padding: 6px 6px;
+        font-size: 13px;
+        border-radius: 8px;
+    }
+    .right p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .left{
+        padding-left: 0;
+    }
+    .left label{
+        padding-left: 10px;
+    }
+    .left,.Timing-list{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px)  {
+    .left,.Timing-list{
+        font-size: 10px;
+    }
+    .left h3{
+        display: block;
+    }
+    .left label{
+        padding-left: 2px;
+    }
+    .Timing-list .box{
+        width: 17px;
+        height: 17px;
+        border-radius: 5px;
+    }
+    .right{
+        width: auto;
+        margin-right: 0;
+        
+    }
+    .right input{
+        padding: 3px 3px;
+        font-size: 10px;
+        border-radius: 5px;
+    }
+    .right p{
+        font-size: 10px;
+    }
 }

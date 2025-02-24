@@ -5,7 +5,7 @@ var highScore = localStorage.getItem("Hscore") ? parseInt(localStorage.getItem("
 
 
 window.onload = function () {
-    debugger;
+    // debugger;
     if (localStorage.getItem("Lscore") != null) {
         LastScore.innerHTML = localStorage.getItem("Lscore").toString();
     }
